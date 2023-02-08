@@ -6,9 +6,12 @@
     <div class="card" style="width: 18rem;">
       <form method="POST" class="form">
         <h1>Ingresar al Sistema</h1>
-        <input type="text" name="email" id="name" [(ngModel)]="email" required />
-        <input type="password" name="password" id="password" [(ngModel)]="password" required />
-
+        <div class="mb-3">
+          <input type="email" class="form-control" name="email" id="name" [(ngModel)]="email" required />
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" name="password" id="password" [(ngModel)]="password" required />
+        </div>
         <button type="submit" (click)="login()">Login</button>
       </form>
     </div>
