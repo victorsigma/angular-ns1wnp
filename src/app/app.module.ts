@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { AccordionModule } from 'primeng/accordion'; //accordion and accordion tab
+import { MenuItem } from 'primeng/api';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,8 +13,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent, HeaderComponent, FooterComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    RegisterComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, AccordionModule],
   providers: [],
   bootstrap: [AppComponent],
 })
