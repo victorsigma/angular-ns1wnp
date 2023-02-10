@@ -10,7 +10,7 @@ export class LoginComponent {
   password: string;
 
   constructor() {
-    this.email = 'Email';
+    this.email = '';
     this.password = '';
   }
 

@@ -10,10 +10,11 @@
             <label for="email">Email</label>
             <input
               type="email"
-              class="form-control"
+              class="text"
               name="email"
               id="name"
               [(ngModel)]="email"
+              placeholder="Email"
               required
             />
           </div>
@@ -21,10 +22,11 @@
             <label for="password">Contraseña</label>
             <input
               type="password"
-              class="form-control"
+              class="text"
               name="password"
               id="password"
               [(ngModel)]="password"
+              placeholder="Password"
               required
             />
           </div>
@@ -32,15 +34,16 @@
             <label for="passwordConfirm">Confirmar Contraseña</label>
             <input
               type="passwordConfirm"
-              class="form-control"
+              class="text"
               name="passwordConfirm"
               id="passwordConfirm"
               [(ngModel)]="passwordConfirm"
+              placeholder="Confirm Password"
               required
             />
           </div>
           <div class="list-group">
-            <button type="button" class="btn btn-info" (click)="register()">
+            <button type="button" class="btn button-login" (click)="register()">
               Registrar
             </button>
           </div>
